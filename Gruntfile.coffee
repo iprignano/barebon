@@ -19,6 +19,10 @@ module.exports = (grunt)->
       options:
         livereload: true
 
+      html:
+        files: ["*.html"]
+        tasks: []
+
       coffee:
         files: ["js/coffee/*.coffee"]
         tasks: ["coffee:compile"]
