@@ -16,12 +16,19 @@ module.exports = (grunt)->
           'css/main.css': 'css/sass/main.sass'
 
     watch:
+      options:
+        livereload: true
+
       coffee:
         files: ["js/coffee/*.coffee"]
         tasks: ["coffee:compile"]
+
+      sass:
+        files: ["css/sass/*.sass"]
+        tasks: ["sass:dist"]
 
   grunt.loadNpmTasks "grunt-contrib-coffee"
   grunt.loadNpmTasks "grunt-contrib-sass"
   grunt.loadNpmTasks "grunt-contrib-watch"
 
-  grunt.registerTask "default", ["coffee"]
+  grunt.registerTask "default", ["coffee", "sass"]
