@@ -1,7 +1,7 @@
 {
   "name": "Barebon",
   "version": "0.0.1",
-  "description": "barebon =======",
+  "description": "Barebon is a minimalistic, modern and easy-to-use skeleton for your projects based on Bourbon and Neat.",
   "main": "index.html",
   "repository": {
     "type": "git",
