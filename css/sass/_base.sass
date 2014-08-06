@@ -1,0 +1,11 @@
+.container
+  @include outer-container
+
+.row
+  @include row()
+
+// This will output classes like .col-1, .col-2, ...
+// so that .col-6 will span 6 columns in a 12-column grid
+@for $i from 1 through $grid-columns
+  .col-#{$i}
+    @include span-columns($i)
