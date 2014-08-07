@@ -1,4 +1,26 @@
+// You can use this file to contain all your media queries
+// or you can just use them as mixins inside your element
+// style declaration, i.e.
+//
+//   .my-class
+//     color: red
+//     @include media($tablet)
+//       color: black
+
 // Hi-res media query
 // ================================
 @include hidpi(1.5)
-  width: 260px
+  // .my-example-logo
+  //   background-image: url('yourlogo@2x.png')
+
+// Tablets (<=768px)
+// ================================
+@include media($tablet)
+  // .my-example-class
+  //   background-color: $black
+
+// Phones (<=480px)
+// ================================
+@include media($tablet)
+  // .my-example-class
+  //   display: none
