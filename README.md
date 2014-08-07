@@ -1,6 +1,8 @@
 Barebon
 =======
 
+![Barebon](img/logo.png)
+
 **Barebon** is a simple, easy to use boilerplate for fast front-end prototyping using [Bourbon](http://bourbon.io/) and [Neat](http://neat.bourbon.io/).
 
 Barebon provides a Grunt-powered, **Sass + CoffeeScript** configuration that aims to speed up all the small steps you have to take when starting a new prototype website.
